@@ -1,0 +1,159 @@
+601 Configuration
+Config-Item: APT::Architecture=amd64
+Config-Item: APT::Build-Essential::=build-essential
+Config-Item: APT::Install-Recommends=1
+Config-Item: APT::Install-Suggests=0
+Config-Item: APT::Authentication::TrustCDROM=true
+Config-Item: APT::NeverAutoRemove::=^firmware-linux.*
+Config-Item: APT::NeverAutoRemove::=^linux-firmware$
+Config-Item: APT::NeverAutoRemove::=^kfreebsd-image.*
+Config-Item: APT::NeverAutoRemove::=^gnumach$
+Config-Item: APT::NeverAutoRemove::=^gnumach-image.*
+Config-Item: APT::NeverAutoRemove::=^linux-image-3.5.0-23-generic$
+Config-Item: APT::NeverAutoRemove::=^linux-image-extra-3.5.0-23-generic$
+Config-Item: APT::NeverAutoRemove::=^linux-signed-image-3.5.0-23-generic$
+Config-Item: APT::NeverAutoRemove::=^linux-backports-modules-.*-3.5.0-23-generic$
+Config-Item: APT::NeverAutoRemove::=^linux-headers-3.5.0-23-generic$
+Config-Item: APT::Never-MarkAuto-Sections::=metapackages
+Config-Item: APT::Never-MarkAuto-Sections::=restricted/metapackages
+Config-Item: APT::Never-MarkAuto-Sections::=universe/metapackages
+Config-Item: APT::Never-MarkAuto-Sections::=multiverse/metapackages
+Config-Item: APT::Never-MarkAuto-Sections::=oldlibs
+Config-Item: APT::Never-MarkAuto-Sections::=restricted/oldlibs
+Config-Item: APT::Never-MarkAuto-Sections::=universe/oldlibs
+Config-Item: APT::Never-MarkAuto-Sections::=multiverse/oldlibs
+Config-Item: APT::Periodic::Update-Package-Lists=1
+Config-Item: APT::Periodic::Unattended-Upgrade=1
+Config-Item: APT::Changelogs::Server=http://changelogs.ubuntu.com/changelogs
+Config-Item: Dir=/
+Config-Item: Dir::State=var/lib/apt/
+Config-Item: Dir::State::lists=lists/
+Config-Item: Dir::State::cdroms=cdroms.list
+Config-Item: Dir::State::mirrors=mirrors/
+Config-Item: Dir::State::extended_states=extended_states
+Config-Item: Dir::State::status=/var/lib/dpkg/status
+Config-Item: Dir::Cache=var/cache/apt/
+Config-Item: Dir::Cache::archives=archives/
+Config-Item: Dir::Cache::srcpkgcache=srcpkgcache.bin
+Config-Item: Dir::Cache::pkgcache=pkgcache.bin
+Config-Item: Dir::Etc=etc/apt/
+Config-Item: Dir::Etc::sourcelist=sources.list
+Config-Item: Dir::Etc::sourceparts=sources.list.d
+Config-Item: Dir::Etc::vendorlist=vendors.list
+Config-Item: Dir::Etc::vendorparts=vendors.list.d
+Config-Item: Dir::Etc::main=apt.conf
+Config-Item: Dir::Etc::netrc=auth.conf
+Config-Item: Dir::Etc::parts=apt.conf.d
+Config-Item: Dir::Etc::preferences=preferences
+Config-Item: Dir::Etc::preferencesparts=preferences.d
+Config-Item: Dir::Etc::trusted=trusted.gpg
+Config-Item: Dir::Etc::trustedparts=trusted.gpg.d
+Config-Item: Dir::Bin::methods=/usr/lib/apt/methods
+Config-Item: Dir::Bin::solvers::=/usr/lib/apt/solvers
+Config-Item: Dir::Bin::dpkg=/usr/bin/dpkg
+Config-Item: Dir::Media::MountPath=/media/cdrom
+Config-Item: Dir::Log=var/log/apt
+Config-Item: Dir::Log::Terminal=term.log
+Config-Item: Dir::Log::History=history.log
+Config-Item: Dir::Ignore-Files-Silently::=~$
+Config-Item: Dir::Ignore-Files-Silently::=\.disabled$
+Config-Item: Dir::Ignore-Files-Silently::=\.bak$
+Config-Item: Dir::Ignore-Files-Silently::=\.dpkg-[a-z]+$
+Config-Item: Dir::Ignore-Files-Silently::=\.save$
+Config-Item: Dir::Ignore-Files-Silently::=\.orig$
+Config-Item: Dir::Ignore-Files-Silently::=\.distUpgrade$
+Config-Item: Acquire::cdrom::mount=/media/cdrom
+Config-Item: Aptitude::Get-Root-Command=sudo:/usr/bin/sudo
+Config-Item: Aptitude::Keep-Unused-Pattern=^linux-image.*$%20|%20^linux-restricted-modules.*$%20|%20^linux-ubuntu-modules.*$
+Config-Item: Unattended-Upgrade::Allowed-Origins::=${distro_id}:${distro_codename}-security
+Config-Item: DPkg::Pre-Install-Pkgs::=/usr/sbin/dpkg-preconfigure%20--apt%20||%20true
+Config-Item: CommandLine::AsString=apt-get%20update
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_Release.gpg
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_Release
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_binary-amd64_Packages
+Index-File: true
+Fail-Ignore: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_binary-i386_Packages
+Index-File: true
+Fail-Ignore: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Index
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Index
+Index-File: true
+Fail-Ignore: true
+
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en%5fUS
+Index-File: true
+Fail-Ignore: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.xz
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en%5fUS
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.xz
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.lzma
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en%5fUS
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.lzma
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.gz
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en%5fUS
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.gz
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en%5fUS
+Fail-Ignore: true
+Index-File: true
+
+600 URI Acquire
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_i18n_Translation-en
+Fail-Ignore: true
+Index-File: true

@@ -1,0 +1,211 @@
+100 Capabilities
+Version: 1.2
+Pipeline: true
+Send-Config: true
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Connecting to extras.ubuntu.com
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Connecting to extras.ubuntu.com (91.189.92.152)
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Waiting for headers
+
+root@balanced-apt-berkshelf:/usr/lib/apt/methods# (cat /tmp/foo && cat) | ./http
+100 Capabilities
+Version: 1.2
+Pipeline: true
+Send-Config: true
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Connecting to extras.ubuntu.com
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Connecting to extras.ubuntu.com (91.189.92.152)
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Message: Waiting for headers
+
+200 URI Start
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Size: 72
+Last-Modified: Mon, 20 Jan 2014 16:01:02 GMT
+Resume-Point: 71
+
+201 URI Done
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release.gpg
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_Release.gpg
+Size: 72
+Last-Modified: Mon, 20 Jan 2014 16:01:02 GMT
+MD5-Hash: 947d0e7cba203ac7cf1255995428dfd2
+MD5Sum-Hash: 947d0e7cba203ac7cf1255995428dfd2
+SHA1-Hash: c29199d25b5cad0691bc75fe9477130d38c96ea5
+SHA256-Hash: c74d3b367cc9a6eb68823555e25d0f97530c07a7f7edcf2e1dbe35a74f4263ea
+SHA512-Hash: 2df39c219508c6cc274c993fafe6515a3f605cfe85013a91b80dfd16569c3f1cb2586e004df794267ee9c7c68f038009e053940c40e4d5669f09ce7347a2e7d3
+Resume-Point: 71
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release
+Message: Waiting for headers
+
+200 URI Start
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release
+Size: 11875
+Last-Modified: Fri, 15 Feb 2013 15:05:55 GMT
+
+201 URI Done
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/Release
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_Release
+Size: 11875
+Last-Modified: Fri, 15 Feb 2013 15:05:55 GMT
+MD5-Hash: 5518a6c60c415380f37fc64ecb069904
+MD5Sum-Hash: 5518a6c60c415380f37fc64ecb069904
+SHA1-Hash: 5771f2c92b2e5c38487722950a1cdcfc8f82b405
+SHA256-Hash: a3ea54a7f398ce1b4f8f271f34349cc89c9423e3acab7fcabf8204acf1d17439
+SHA512-Hash: dda4564733e9463dc48b7e0cf4a37ecb414b3a10dd201b63f303b68e8c94adc5b5845f01a2764dcd8898010615be43b9c374bedcac279341ec583f0f98694c15
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages.bz2
+Message: Waiting for headers
+
+200 URI Start
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages.bz2
+Size: 10788
+Last-Modified: Fri, 15 Feb 2013 16:01:01 GMT
+
+201 URI Done
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-amd64/Packages.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_binary-amd64_Packages
+Size: 10788
+Last-Modified: Fri, 15 Feb 2013 16:01:01 GMT
+MD5-Hash: 4019d042f1f2fe7644056a366b3364f1
+MD5Sum-Hash: 4019d042f1f2fe7644056a366b3364f1
+SHA1-Hash: 807d780e437efcd456ec9302504b04f1edfdb13f
+SHA256-Hash: 41bb5837826fd66d37b5c520a948f5f50a9abf1e317d1d53f46d506260b85db7
+SHA512-Hash: 92438637ce9e1c072c48a7ad2793c9255a6126ce5fb7f719f7d21db14b52b8d3a74c8656de184c64d7fa362893dddf30784f642e0b2d78f67ab81a3cda1b6f8a
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages.bz2
+Message: Waiting for headers
+
+200 URI Start
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages.bz2
+Size: 10788
+Last-Modified: Fri, 15 Feb 2013 16:01:01 GMT
+
+201 URI Done
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/binary-i386/Packages.bz2
+Filename: /var/lib/apt/lists/partial/extras.ubuntu.com_ubuntu_dists_precise_main_binary-i386_Packages
+Size: 10788
+Last-Modified: Fri, 15 Feb 2013 16:01:01 GMT
+MD5-Hash: a7111e0bc5e918b8ef316ef933bf6e23
+MD5Sum-Hash: a7111e0bc5e918b8ef316ef933bf6e23
+SHA1-Hash: 3556d8d91cf3c102dd7e338e447df4c5d820ecb7
+SHA256-Hash: 203da9b31b1bae2e808bd68b5fdee7ee2c09c6d18ea00e191c683459f3fa772e
+SHA512-Hash: 561471fab19d21b15f3f1d3ce87e854604cb50d2f367eb8d0b7373787ad0fda32d9fe7f44a750376b9cac3b6113df400afbd47b44a88b66170c12250d8e1c989
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Index
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Index
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.bz2
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.bz2
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.bz2
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.bz2
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.xz
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.xz
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.xz
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.xz
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.lzma
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.lzma
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.lzma
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.lzma
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.gz
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US.gz
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.gz
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en.gz
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en_US
+Message: 404  Not Found
+FailReason: HttpError404
+
+102 Status
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en
+Message: Waiting for headers
+
+400 URI Failure
+URI: foo://extras.ubuntu.com/ubuntu/dists/precise/main/i18n/Translation-en
+Message: 404  Not Found
+FailReason: HttpError404
